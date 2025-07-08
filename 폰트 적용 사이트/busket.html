@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #banner{
+            width: 100%;
+            height: 131px;
+            background-color: #EF7171;
+            text-align: center;
+            font-size: 30px;
+        }
+        main {
+            width: 100%;
+            height: 650px;
+            background-color: #D57A7A;
+            position: absolute;
+        }
+        footer {
+            width: 100%;
+            height: 131px;
+            background-color: #833D3D;
+            position: relative;
+            top: 650px;
+        }
+        footer{
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="banner">메인</header>
+    <form action="">
+        <main id="main">
+
+        </main>
+    </form>
+    <footer>메뉴</footer>
+    <script>
+        document.getElementById('banner').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='main.html';
+        })
+    </script>
+</body>
+</html>

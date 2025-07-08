@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인화면</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #banner{
+            width: 100%;
+            height: 131px;
+            background-color: #EF7171;
+            text-align: center;
+            font-size: 30px;
+        }
+        main {
+            width: 100%;
+            height: 650px;
+            background-color: #D57A7A;
+            position: absolute;
+        }
+        footer {
+            width: 100%;
+            height: 131px;
+            background-color: #833D3D;
+            position: relative;
+            top: 650px;
+        }
+        footer{
+            font-size: 30px;
+            text-align: center;
+        }
+        #text {
+            text-align: center;
+            position: relative;
+            top: 100px;
+            font-size: 50px;  
+        }
+        #input {
+            position: relative;
+            width: 40%;
+            height: 30px;
+            top: 200px;
+            left: 30%;
+        }
+        #btn{
+            position: relative;
+            top: 300px;
+            left:5%;
+            width: 10%;
+            height: 50px
+        }
+    </style>
+</head>
+<body>
+    <header id="banner">메인</header>
+    <form action="">
+        <main id="main">
+            <article id="text">글을 입력해주세요!</article>
+            <input type="text" placeholder="글을 입력하면 폰트가 변합니다." id="input" name="text">
+            <button id="btn">입력!</button>
+        </main>
+    </form>
+    <footer>메뉴</footer>
+    <script>
+        document.getElementById('btn').addEventListener('click',(e)=>{
+            const value = document.getElementById('input').value;
+            const encodedValue = encodeURIComponent(value);
+            
+            e.preventDefault();
+            window.location.href = `result.html?text=${encodedValue}`;
+        })
+    </script>
+</body>
+</html>

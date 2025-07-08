@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과페이지</title>
+    <style>
+        @font-face {
+            font-family: '온글잎 박다현체';
+            src: url(/fonts/온글잎\ 박다현체.ttf);
+        } 
+        @font-face{
+            font-family: 'BagleFatOne';
+            src: url(/fonts/BagelFatOne-Regular.ttf);
+        }
+        @font-face{
+            font-family: 'TuesdayofYunah';
+            src: url(/fonts/The_Tuesday_of_Younah.ttf);
+        }
+        @font-face{
+            font-family: 'Cafe24';
+            src: url(/fonts/Cafe24PROUP.ttf);
+        }
+        @font-face{
+            font-family: '온글잎 콘콘체';
+            src: url(/fonts/온글잎\ 콘콘체.ttf);
+        }
+        @font-face{
+            font-family: 'chab';
+            src: url(/fonts/chab.ttf);
+        }
+        body{
+            margin:0px;
+        }
+        #banner{
+            width: 100%;
+            height: 131px;
+            background-color: #EF7171;
+            text-align: center;
+            font-size: 30px;
+        }
+        header{
+            position: fixed;
+        }
+        main {
+            width: 100%;
+            height: 680px;
+            background-color: #D57A7A;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 131px;
+            overflow-y:scroll ;
+
+        }
+        footer {
+            width: 100%;
+            height: 131px;
+            background-color: #833D3D;
+            position: fixed;
+            top: 770px;
+        }
+        footer{
+            font-size: 30px;
+            text-align: center;
+        }
+        .font  {
+            width:30%;
+            height: 200px;
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+            margin: 15px;
+            position: relative;
+            top: 50px;
+            font-size: 200%;
+        }
+        .script{
+            font-size: 70%;
+            text-align: center;
+            width: 90%;
+            height: 70%;
+            margin:auto;
+            background-color: lightgray;
+        }
+        .design{
+            font-size: 30px;
+            width: 30%;
+            height: 250px;
+            background-color: lightgray;
+            text-align: center;
+            margin: 30px;
+
+        }
+       
+        .font-inpo{
+            background-color: #D57A7A;
+            margin: auto;
+            height: 80%;
+            font-size: 30px;
+        }
+        .design-inside{
+            font-size: 24px;
+            background-color: lightyellow;
+            width: 90%;
+            height: 180px;
+
+            margin: auto;
+
+        }
+        #modal-inside1,#modal-inside2,#modal-inside3,#modal-inside4,#modal-inside5,#modal-inside6{
+            background-color: white;
+            width: 40%;
+            height: 300px;
+            text-align: center;
+            margin-top: 100px;
+        }
+         .modal1 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal1-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body1{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body1{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+         .modal2 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal2-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body2{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body2{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+         .modal3 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal3-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body3{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body3{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+         .modal4 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal4-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body4{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body4{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+         .modal5 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal5-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body5{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body5{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+         .modal6 {
+            position: absolute;
+            display: none;
+
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        .modal6-1{
+            position: absolute;
+            display: none;
+            justify-content: center;
+
+
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index:1100
+        }
+        .modal-body6{
+            background-color: white;
+            width: 80%;
+            height: 600px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            z-index: 1001;
+        }
+        #busket-body6{
+            background-color: white;
+            width: 60%;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .btn-open-modal1,.btn-open-modal2,.btn-open-modal3,
+        .btn-open-modal4,.btn-open-modal5,.btn-open-modal6{
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="banner">메인</header>
+    <main id="main" class="main">
+<!-- 폰트 보여주는 요소 1개 -->
+        <div class="design">
+            <div class="btn-open-modal1" style="font-family:'온글잎 박다현체' ;">
+                <div style="height: 50px;font-size: 40px;">온글잎 박다현체</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal1" style="display: none;">
+            <div class="modal-body1" style="font-family:'온글잎 박다현체' ;">
+                온글잎 박다현체
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out1-1">닫기</button>
+                <button id="inBusket1">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal1-1" style="display: none;" id="modal-inside1">
+            <div id="busket-body1">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out1-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="design">
+            <div class="btn-open-modal2" style="font-family: 'BagleFatOne';">
+                <div style="height: 50px;">베이글팻</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal2" style="display: none;">
+            <div class="modal-body2" style="font-family: 'BagleFatOne';">
+                베이글팻
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out2-1">닫기</button>
+                <button id="inBusket2">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal2-1" style="display: none;" id="modal-inside2">
+            <div id="busket-body2">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out2-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="design">
+            <div class="btn-open-modal3" style="font-family: 'TuesdayofYunah';">
+                <div style="height: 50px;"">유나의 화요일</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal3" style="display: none;">
+            <div class="modal-body3" style="font-family: 'TuesdayofYunah';">
+                유나의 화요일
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out3-1">닫기</button>
+                <button id="inBusket3">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal3-1" style="display: none;" id="modal-inside3">
+            <div id="busket-body3">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out3-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="design">
+            <div class="btn-open-modal4" style="font-family: 'Cafe24'">
+                <div style="height: 50px; font-size: 35px;">Cafe 24</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal4" style="display: none;">
+            <div class="modal-body4" style="font-family: 'Cafe24'">
+                Cafe24PROUP
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out4-1">닫기</button>
+                <button id="inBusket4">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal4-1" style="display: none;" id="modal-inside4">
+            <div id="busket-body4">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out4-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="design">
+            <div class="btn-open-modal5" style="font-family: '온글잎 콘콘체';">
+                <div style="height: 50px; font-size: 40px;">온글잎 콘콘체</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal5" style="display: none;">
+            <div class="modal-body5" style="font-family: '온글잎 콘콘체';">
+                온글잎 콘콘체
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out5-1">닫기</button>
+                <button id="inBusket5">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal5-1" style="display: none;" id="modal-inside5">
+            <div id="busket-body5">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out5-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+        <!-- 여기까지 -->
+        <div class="design">
+            <div class="btn-open-modal6" style="font-family: 'chab';">
+                <div style="height: 50px;">롯데리아 촵땡겨체</div>
+                <div class="design-inside">폰트 적용 글</div>
+            </div>
+        </div>
+
+        <div class="modal6" style="display: none;">
+            <div class="modal-body6" style="font-family: 'chab';">
+                롯데리아 촵땡겨체
+                <div class="font-inpo">폰트 설명</div>
+                <button class="out6-1">닫기</button>
+                <button id="inBusket6">장바구니 담기</button>
+            </div>
+        </div>
+
+        <div class="modal6-1" style="display: none;" id="modal-inside6">
+            <div id="busket-body6">
+                장바구니에 담겼습니다.
+                <br>
+                <br>
+                <button class="out6-2">확인</button>
+                <button class="goBusket">장바구니로 가기</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>메뉴</footer>
+    <script>
+        const modal1 = document.querySelector('.modal1');
+        const modal1_1 = document.querySelector('.modal1-1');
+        const getInfo1 = document.querySelector('.btn-open-modal1');
+        const out1_1 = document.querySelector('.out1-1');
+        const inBusket1 = document.getElementById('inBusket1');
+        const out2_1 = document.querySelector('.out1-2');
+        getInfo1.addEventListener('click',()=>{
+            modal1.style.display='flex';
+        })
+        out1_1.addEventListener('click',()=>{
+            modal1.style.display='none';
+        })
+
+        inBusket1.addEventListener('click',()=>{
+            modal1_1.style.display='flex';
+        })
+        out2_1.addEventListener('click',()=>{
+            modal1_1.style.display='none';
+        })
+
+        const modal2 = document.querySelector('.modal2');
+        const modal2_1 = document.querySelector('.modal2-1');
+        const getInfo2 = document.querySelector('.btn-open-modal2');
+        const out1_2 = document.querySelector('.out2-1');
+        const inBusket2 = document.getElementById('inBusket2');
+        const out2_2 = document.querySelector('.out2-2');
+        getInfo2.addEventListener('click',()=>{
+            modal2.style.display='flex';
+        })
+        out1_2.addEventListener('click',()=>{
+            modal2.style.display='none';
+        })
+
+        inBusket2.addEventListener('click',()=>{
+            modal2_1.style.display='flex';
+        })
+        out2_2.addEventListener('click',()=>{
+            modal2_1.style.display='none';
+        })
+
+
+        const modal3 = document.querySelector('.modal3');
+        const modal3_1 = document.querySelector('.modal3-1');
+        const getInfo3 = document.querySelector('.btn-open-modal3');
+        const out1_3 = document.querySelector('.out3-1');
+        const inBusket3 = document.getElementById('inBusket3');
+        const out2_3 = document.querySelector('.out3-2');
+        getInfo3.addEventListener('click',()=>{
+            modal3.style.display='flex';
+        })
+        out1_3.addEventListener('click',()=>{
+            modal3.style.display='none';
+        })
+
+        inBusket3.addEventListener('click',()=>{
+            modal3_1.style.display='flex';
+        })
+        out2_3.addEventListener('click',()=>{
+            modal3_1.style.display='none';
+        })
+
+        const modal4 = document.querySelector('.modal4');
+        const modal4_1 = document.querySelector('.modal4-1');
+        const getInfo4 = document.querySelector('.btn-open-modal4');
+        const out1_4 = document.querySelector('.out4-1');
+        const inBusket4 = document.getElementById('inBusket4');
+        const out2_4 = document.querySelector('.out4-2');
+        getInfo4.addEventListener('click',()=>{
+            modal4.style.display='flex';
+        })
+        out1_4.addEventListener('click',()=>{
+            modal4.style.display='none';
+        })
+
+        inBusket4.addEventListener('click',()=>{
+            modal4_1.style.display='flex';
+        })
+        out2_4.addEventListener('click',()=>{
+            modal4_1.style.display='none';
+        })
+
+        const modal5 = document.querySelector('.modal5');
+        const modal5_1 = document.querySelector('.modal5-1');
+        const getInfo5 = document.querySelector('.btn-open-modal5');
+        const out1_5 = document.querySelector('.out5-1');
+        const inBusket5 = document.getElementById('inBusket5');
+        const out2_5 = document.querySelector('.out5-2');
+        getInfo5.addEventListener('click',()=>{
+            modal5.style.display='flex';
+            setTimeout(() => {
+                main.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                })
+                
+            }, 100);
+            
+        })
+
+        out1_5.addEventListener('click',()=>{
+            modal5.style.display='none';
+        })
+
+        inBusket5.addEventListener('click',()=>{
+            modal5_1.style.display='flex';
+        })
+        out2_5.addEventListener('click',()=>{
+            modal5_1.style.display='none';
+        })
+
+        const modal6 = document.querySelector('.modal6');
+        const modal6_1 = document.querySelector('.modal6-1');
+        const getInfo6 = document.querySelector('.btn-open-modal6');
+        const out1_6 = document.querySelector('.out6-1');
+        const inBusket6 = document.getElementById('inBusket6');
+        const out2_6 = document.querySelector('.out6-2');
+        getInfo6.addEventListener('click',()=>{
+            modal6.style.display='flex';
+            setTimeout(() => {
+                main.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                })
+                
+            }, 100);
+        })
+        out1_6.addEventListener('click',()=>{
+            modal6.style.display='none';
+        })
+
+        inBusket6.addEventListener('click',()=>{
+            modal6_1.style.display='flex';
+        })
+        out2_6.addEventListener('click',()=>{
+            modal6_1.style.display='none';
+        })
+
+        document.getElementById('banner').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='main.html';
+        })
+
+        document.querySelectorAll('.goBusket').forEach(button =>{
+            button.addEventListener('click',(e)=>{
+                e.preventDefault();
+                window.location.href = 'busket.html'
+
+            })
+        })
+            
+
+        const params = new URLSearchParams(window.location.search);
+        const text = params.get('text');
+        
+        function changer(newText){
+            const element = document.querySelectorAll('.design-inside');
+            element.forEach(el =>{
+                el.textContent = newText;
+            })
+        }
+        changer(text);
+    </script>
+</body>
+</html>
