@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기</title>
+    <link rel="stylesheet" href="/layout.css">
+    <style>
+        #main{
+            width: 100%;
+            height: 100%px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .box{
+            background-color: aliceblue;
+            width: 90%;
+            height: 90%;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .inside{
+            background-color: bisque;
+            border-radius: 50px;
+            width: 33%;
+            height: 90%;
+            font-size: 25px;
+            font-weight: 600;
+            border: solid 5px rgba(119, 29, 29, 0.4);
+        }
+        #inquire{
+            background-color: bisque;
+            border-radius: 50px;
+            width: 63%;
+            height: 90%;
+            font-size: 25px;
+            font-weight: 600;
+            border: solid 5px rgba(119, 29, 29, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <div id="logo">로고이미지</div>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div class="box">
+                <div class="inside">
+                    <div>찜 목록</div>
+                </div>
+                <div class="inside" id="inquire">
+                    <div>문의 내역</div>
+                </div>
+                <!-- <div class="inside">
+                    <div>찜 목록</div>
+                </div> -->
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="menu-bar">
+            <div id="menu1" class="menu">메인메뉴</div>
+            <div id="menu2" class="menu">폰트보기</div>
+            <div id="menu3" class="menu">문의하기</div>
+            <div id="menu4" class="menu">마이페이지
+            </div>
+        </div>
+    </footer>
+    <script src="/메뉴바.js"></script>
+    <script src="/로고.js"></script>
+</body>
+</html>

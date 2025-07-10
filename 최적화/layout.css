@@ -1,0 +1,48 @@
+        body{
+            margin: 0;  
+            height: 915px;
+            width: 100%;;    
+        }
+        header{
+            height: 15%;
+        }
+        main{
+            height: 75%;
+        }
+        footer{
+            height: 10%;
+        }
+        #banner {
+            background-color: rgb(245, 215, 150);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #logo{
+            background-color: rgb(190, 194, 175);
+            color: white;
+            width: 300px;
+            height: 10%;
+            position: fixed;
+        }
+        #main{
+            background-color: rgb(241, 241, 241);
+            height: 100%;
+            background-image: url(/img/배경.png);
+        }
+        #menu-bar{
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+        .menu{
+            background-color: beige; 
+            width: 33%;
+        }
+        .mouseover{
+            background-color: rgb(128, 108, 78);
+            color: white;
+        }

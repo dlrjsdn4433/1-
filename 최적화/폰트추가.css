@@ -1,0 +1,42 @@
+        @font-face {
+            font-family: '유나';
+            src: url(/fonts/The_Tuesday_of_Younah.ttf);
+        }
+        @font-face {
+            font-family: '다현';
+            src: url(/fonts/온글잎\ 박다현체.ttf);
+        }
+        @font-face {
+            font-family: '콘콘';
+            src: url(/fonts/온글잎\ 콘콘체.ttf);
+        }
+        @font-face {
+            font-family: '탁1';
+            src: url(/fonts/온글잎\ 탁1.ttf);
+        }
+        @font-face {
+            font-family: '재건사';
+            src: url(/fonts/온글잎\ 재건사.ttf);
+        }
+        @font-face {
+            font-family: '갤럭시';
+            src: url(/fonts/갤럭시X온글잎\ 재문.ttf);
+        }
+        .유나{
+            font-family: '유나';
+        }
+        .다현{
+            font-family: '다현';
+        }
+        .콘콘{
+            font-family: '콘콘';
+        }
+        .탁1{
+            font-family: '탁1';
+        }
+        .재건사{
+            font-family: '재건사';
+        }
+        .갤럭시{
+            font-family: '갤럭시';
+        }

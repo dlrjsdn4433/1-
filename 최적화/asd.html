@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text" id="text">
+    <div id="btn">버튼</div>
+    <script>
+        document.getElementById('btn').addEventListener('click',(e)=>{
+            const $text = document.getElementById('text').value;
+            const $encodedValue = encodeURIComponent($text);
+            e.preventDefault();
+            window.location.href=`asd2.html?text=${$encodedValue}`;
+            
+        })
+
+    </script>
+</body>
+</html>

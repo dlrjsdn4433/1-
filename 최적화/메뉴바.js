@@ -1,0 +1,25 @@
+        const menu = document.querySelectorAll('.menu');
+        menu.forEach(a=>{
+            a.addEventListener('mouseover',()=>{
+                a.classList.add('mouseover')
+            })
+            a.addEventListener('mouseout',()=>{
+                a.classList.remove('mouseover')
+            })
+        })
+                document.getElementById('menu1').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='메인화면.html'
+        })
+        document.getElementById('menu2').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='폰트보기.html'
+        })
+        document.getElementById('menu3').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='문의하기.html'
+        })
+        document.getElementById('menu4').addEventListener('click',(e)=>{
+            e.preventDefault();
+            window.location.href='마이페이지.html'
+        })
