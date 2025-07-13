@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="/layout.css">
+    <style>
+        #main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            
+        }
+        .box{
+            background-color: aliceblue;
+            width: 90%;
+            height: 90%;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .inside{
+            background-color: bisque;
+            border-radius: 50px;
+            width: 33%;
+            height: 90%;
+            font-size: 25px;
+            font-weight: 600;
+            border: solid 5px rgba(119, 29, 29, 0.4);
+        }
+        #inquire{
+            background-color: bisque;
+            border-radius: 50px;
+            width: 63%;
+            height: 90%;
+            font-size: 25px;
+            font-weight: 600;
+            border: solid 5px rgba(119, 29, 29, 0.4);
+        }
+        .inquires{
+            /* border: 1px solid black; */
+            font-size:20px;
+            font-weight: normal;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            
+        }
+        #title,#script,#delete{
+            text-align:center;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            
+        }
+        #title{
+            width: 19%;
+        }
+        #script{
+            width: 59%;
+        }
+        #delete{
+            width: 20%;
+        }
+        .title,.script,.delete{
+            display: non;
+            width: 100%;height: 30px;
+            border-radius: 50px;    
+        }
+        .title{
+            background-color: rgb(142, 142, 197);
+            color: white;
+        }
+        .script{
+            background-color: rgb(204, 185, 185);
+            white-space: nowarp;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #box {
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 25%;
+        }
+        .fontnameframe{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .delFontframe{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #delFont{
+            width: 50%;
+            text-align: center;
+            border-radius: 50px;
+            background-color: rgb(168, 214, 214);
+        }
+        #fontname{
+            background-color: rgb(92, 92, 131);
+            border-radius: 50px; 
+            width: 50%;
+            text-align: center;
+        }
+        .delFont{
+            width: 50%;
+            text-align: center;
+            border-radius: 50px;
+            background-color: rgb(241, 132, 99);
+            font-weight: 500;
+            display: none;
+        }
+        .fontname{
+            background-color: rgb(142, 142, 197);
+            border-radius: 50px; 
+            width: 50%;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <div id="logo"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div class="box">
+                <div class="inside" >
+                    <div style= "height: 100%;">찜 목록
+                        <div id="box">
+                        <div class="fontnameframe">
+                            <div id="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                            <div class="fontname">폰트이름</div>    
+                        </div>
+                            <div class="delFontframe">
+                                <div id="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                                <div class="delFont">삭제</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="inside" id="inquire">
+                    <div>문의 내역</div>
+                    <div><pre style="font-size: 15px;">문의 내역은 최대 6개까지만 저장됩니다.</pre></div>
+                    <div class="inquires">
+                        <div id="title">문의 제목
+                            <div class="title">제목1</div>
+                            <div class="title">제목2</div>
+                            <div class="title">제목3</div>
+                            <div class="title">제목4</div>
+                            <div class="title">제목5</div>
+                            <div class="title">제목6</div>
+                        </div>
+                        <div id="script">문의 내용
+                            <div class="script">내용1</div>
+                            <div class="script">내용2</div>
+                            <div class="script">내용3</div>
+                            <div class="script">내용4</div>
+                            <div class="script">내용5</div>
+                            <div class="script">내용6</div>
+                        </div>
+                        <div id="delete">삭제하기
+                            <div class="delete">삭제</div>
+                            <div class="delete">삭제</div>
+                            <div class="delete">삭제</div>
+                            <div class="delete">삭제</div>
+                            <div class="delete">삭제</div>
+                            <div class="delete">삭제</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="inside">
+                    <div>찜 목록</div>
+                </div> -->
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="menu-bar">
+            <div id="menu1" class="menu">메인메뉴</div>
+            <div id="menu2" class="menu">폰트보기</div>
+            <div id="menu3" class="menu">문의하기</div>
+            <div id="menu4" class="menu">마이페이지
+            </div>
+        </div>
+    </footer>
+    <script src="/메뉴바.js"></script>
+    <script src="/로고.js"></script>
+    <script src="/찜하기.js"></script>
+    <script src="/문의내역.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기</title>
+    <link rel="stylesheet" href="/layout.css">
+    <style>
+        #main{
+            width: 100%;
+            height: 100%px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        #box{
+            background-color: aliceblue;
+            width: 90%;
+            height: 90%;
+            border-radius: 50px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        fieldset{
+            width: 80%;
+            height: 80%;
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        #input  {
+            width: 90%;
+            height: 70%;
+            resize: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+        #title{
+            width: 90%;
+            height: 10%;
+            resize: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+
+        }
+        button{
+            width: 5%;
+            height: 5%;
+        }
+
+        .modal{
+            background-color: white;
+            width: 60%;
+            height: 50%;
+            position: fixed;
+            top:25%;
+            display :none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+            border-top: 20px solid  beige;
+        }
+        #button{
+            display: flex;
+            gap: 20px;
+        }
+        .modal2{
+
+            background-color: rgb(255, 255, 255);
+            width: 40%;
+            height: 20%;
+            position: fixed;
+            top: 40%;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-top: 20px solid  beige;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <div id="logo"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div id="box">
+                <form action="">
+                <fieldset>
+                    <legend>문의하기</legend>
+                    <textarea name="title" id="title" placeholder="제목을 입력해주세요."></textarea>
+                    <textarea name="text" id="input" maxlength="500" placeholder="문의 내역을 입력해주세요."></textarea>
+                    <div style="font-size: 20px;"><span id="span">0</span>/500자</div>
+                </fieldset>
+                <button id="submit">제출하기</button>
+                </form>
+                <div id="modal1" class="modal" ">
+                    <div>제출하시겠습니까?</div>
+                    <div id="button">
+                        <div id="ok">확인</div>
+                        <div id="no">취소</div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal2">
+                    <div>문의가 제출되었습니다.</div>
+                    <div id="button">
+                        <div id="exit">닫기</div>
+                        <div id="go">마이페이지</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div id="menu-bar">
+            <div id="menu1" class="menu">메인메뉴</div>
+            <div id="menu2" class="menu">폰트보기</div>
+            <div id="menu3" class="menu">문의하기</div>
+            <div id="menu4" class="menu">마이페이지
+        </div>
+    </footer>
+    <script src="/메뉴바.js"></script>
+    <script src="/로고.js"></script>
+    <script src="/문의하기.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
